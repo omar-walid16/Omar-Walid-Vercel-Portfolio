@@ -12,8 +12,6 @@ var typed = new Typed('.element', {
     loopCount: Infinity,
 });
 
-new WOW().init();
-
 $('#btnUp').click(function () {
     $('html,body').animate({scrollTop:hScroll},1000)
 })
@@ -54,4 +52,5 @@ $(window).scroll(function (){
         $('#btnUp').fadeOut(500);
     }
 })
+
 
