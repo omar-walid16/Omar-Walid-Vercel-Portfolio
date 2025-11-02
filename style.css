@@ -1,0 +1,373 @@
+:root {
+    --main-bg-color : #101820 ;
+    --main-color : #FEE715 !important;
+    --sec-color : #7c3aed ;
+    /* --main-shadow :1px 1px 2px blue, 0 0 25px blue, 0 0 5px blue; */
+    --main-shadow :1px 1px 2px red, 0 0 25px red, 0 0 5px red;
+}
+
+html
+{
+    scroll-behavior: auto !important;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#btnUp
+{
+    display: none;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999999999;
+    border: solid 2px var(--sec-color);
+    background-color: var(--main-color);
+    color: black;
+}
+
+a , i {
+    cursor: pointer;
+}
+
+#prices .privilges i {
+  color: #00861f;
+}
+
+
+.btn-w {
+  width: 60px;
+  height: 60px;
+}
+
+.sec-color {
+  color: var(--sec-color);
+}
+
+nav a:hover {
+  color: #6b0101 !important;
+  transition: color 0.6s;
+}
+
+nav .spec-a:hover {
+  color: var(--main-color) !important;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+.main-bg {
+    background-color: var(--main-bg-color);
+}
+
+.main-text {
+    color: var(--main-color) ;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+   font-style: normal;
+}
+
+.main-shadow {
+    text-shadow: var(--main-shadow);
+}
+
+.navbar-toggler {
+    color: var(--main-color) !important;
+}
+
+.navbar-toggler-icon {
+    color: var(--main-color) !important;
+}
+
+.navbar a {
+    color: var(--main-color) !important;
+}
+
+#home .icons .icon
+{
+    border: 1px solid rgb(204, 255, 0); 
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-shadow: var(--main-shadow);
+}
+
+#home .icons .icon a
+{
+    color: var(--main-color);
+}
+
+.sp-size {
+    font-size: 28px;
+    color: var(--main-color) !important;
+}
+
+.email , .phone i {
+  color: purple;
+}
+
+.email , .phone  {
+  border: rgba(255, 255, 255, 0.4) 0.1px solid;
+  border-radius: 15px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.4) 0.1px solid;
+  color: white;
+  transition: background-color 0.5s;
+}
+.icon:hover  {
+  background-color: var(--sec-color);
+}
+
+footer {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 20px;
+  width: 60%;
+  background-color: #1b2229;
+  border-radius: 30px;
+  padding: 30px;
+  margin: auto;
+}
+
+/* From Uiverse.io by Pravins01 */ 
+.card {
+  position: relative;
+  gap: 15px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.card:hover {
+  border: var(--main-color) 3px solid;
+  transition:border 0.4s;
+  
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+/* From Uiverse.io by SupportHotline */ 
+.button {
+  background: var(--color-back);
+  border-radius: 0.5em;
+  box-shadow:
+    inset 0px -6px 18px -6px rgba(3, 15, 20, 0),
+    inset rgba(54, 69, 75, 1) -1px -1px 6px 0px,
+    inset 12px 0px 12px -6px rgba(3, 15, 20, 0),
+    inset -12px 0px 12px -6px rgba(3, 15, 20, 0),
+    rgba(54, 69, 75, 1) -1px -1px 6px 0px;
+  border: solid 2px #030f14;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.7em 1.7em;
+  outline: none;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.button:hover {
+  box-shadow:
+    inset 0px -6px 18px -6px rgba(12, 0, 174, 1),
+    inset 0px 6px 18px -6px rgba(12, 0, 174, 1),
+    inset 12px 0px 12px -6px rgba(12, 0, 174, 0),
+    inset -12px 0px 12px -6px rgba(12, 0, 174, 0),
+    -1px -1px 6px 0px rgba(54, 69, 75, 1);
+}
+
+.button:active {
+  box-shadow:
+    inset 0px -12px 12px -6px rgb(12, 0, 174),
+    inset 0px 12px 12px -6px rgba(12, 0, 174, 1),
+    inset 12px 0px 12px -6px rgba(12, 0, 174, 1),
+    inset -12px 0px 12px -6px rgba(12, 0, 174, 1),
+    -1px -1px 6px 0px rgba(12, 0, 174, 1);
+}
+
+.text {
+  color: #d0a756;
+  font-weight: 700;
+  margin: auto;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.button:hover .text {
+  transform: scale(0.9);
+}
+
+.button:active .text {
+  transform: scale(0.8);
+}
+
+.contact {
+  transition: all 0.6s;
+}
+
+.contact:hover {
+  transform: scale(1.03);
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card1 {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 13px;
+}
+.card1:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  border: var(--main-color) solid 4px;
+}
+
+.text-spec {
+  color: #FEE715;
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 24px;
+  color: var(--main-color);
+  line-height: 1.4;
+}
+
+
+#loading
+{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+}
+
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+
+@keyframes sk-chase {
+  100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    transform: scale(0.4); 
+  } 100%, 0% {
+    transform: scale(1.0); 
+  } 
+}
